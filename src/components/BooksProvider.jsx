@@ -12,6 +12,7 @@ class BooksProvider extends React.Component {
 
   componentDidMount() {
     if (this.state.books.length === 0) {
+      console.log('Mounted');
       this.getBooks();
     }
   }
